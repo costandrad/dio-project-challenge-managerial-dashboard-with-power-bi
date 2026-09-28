@@ -34,7 +34,7 @@ in
 <figure style="text-align: center;">
     <figcaption>Tabela d_Segment</figcaption>
     <img src="./02-assets/tbl-dSegment.png" alt="Tabela d_Segment" style="display: block; margin: 0 auto; width: 360px">
-    <small>Fonte: <a href="https://github.com/costandrad">Autor</a></small>
+    <figcaption>Fonte: <a href="https://github.com/costandrad">Autor</a></figcaption>
 </figure>
 
 
@@ -58,7 +58,7 @@ in
 <figure style="text-align: center;">
     <figcaption>Tabela d_Country</figcaption>
     <img src="./02-assets/tbl-dCountry.png" alt="Tabela d_Country" style="display: block; margin: 0 auto; width: 360px">
-    <small>Fonte: <a href="https://github.com/costandrad">Autor</a></small>
+    <figcaption>Fonte: <a href="https://github.com/costandrad">Autor</a></figcaption>
 </figure>
 
 
@@ -81,7 +81,7 @@ in
 <figure style="text-align: center;">
     <figcaption>Tabela d_Product</figcaption>
     <img src="./02-assets/tbl-dProduct.png" alt="Tabela d_Product" style="display: block; margin: 0 auto; width: 480px">
-    <small>Fonte: <a href="https://github.com/costandrad">Autor</a></small>
+    <figcaption>Fonte: <a href="https://github.com/costandrad">Autor</a></figcaption>
 </figure>
 
 
@@ -104,7 +104,7 @@ in
 <figure style="text-align: center;">
     <figcaption>Tabela dDiscountBand</figcaption>
     <img src="./02-assets/tbl-dDiscountBand.png" alt="Tabela dDiscountBand" style="display: block; margin: 0 auto; width: 360px">
-    <small>Fonte: <a href="https://github.com/costandrad">Autor</a></small>
+    <figcaption>Fonte: <a href="https://github.com/costandrad">Autor</a></figcaption>
 </figure>
 
 - `d_Calendar`
@@ -141,15 +141,23 @@ in
     #"Colunas Removidas3"
 ```
 
+<figure style="text-align: center;">
+    <figcaption>Primeiras linhas da tabela fato f_Vendas</figcaption>
+    <img src="./02-assets/tbl-fVendas-sample.png" alt="Primeiras linhas da tabela fato f_Vendas" style="display: block; margin: 0 auto; width: 640px">
+    <figcaption>Fonte: <a href="https://github.com/costandrad">Autor</a></figcaption>
+</figure>
+
 Como resultado, o modelo em estrela resultante é mostrado na figura abaixo:
 
 
 <figure style="text-align: center;">
     <figcaption>Modelo Star Schema</figcaption>
     <img src="./02-assets/tbl-star-schema.png" alt="Modelo Star Schema" style="display: block; margin: 0 auto; width: 640px">
-    <small>Fonte: <a href="https://github.com/costandrad">Autor</a></small>
+    <figcaption>Fonte: <a href="https://github.com/costandrad">Autor</a></figcaption>
 </figure>
 
 
 ### 3. _Load_ (Carregar)
 
+
+Na etapa final, os dados transformados são gravados no destino escolhido a fim de alimentar diretamente um modelo no Power BI. Como o arquivo é pequeno e estático, uma carga completa costuma ser suficiente. Ao final dessa etapa, os dados estão disponíveis em um ambiente confiável e otimizado para consulta — fechando o ciclo do ETL iniciado com a extração do link raw no GitHub.
