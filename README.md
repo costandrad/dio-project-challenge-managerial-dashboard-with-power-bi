@@ -161,3 +161,37 @@ Como resultado, o modelo em estrela resultante é mostrado na figura abaixo:
 
 
 Na etapa final, os dados transformados são gravados no destino escolhido a fim de alimentar diretamente um modelo no Power BI. Como o arquivo é pequeno e estático, uma carga completa costuma ser suficiente. Ao final dessa etapa, os dados estão disponíveis em um ambiente confiável e otimizado para consulta — fechando o ciclo do ETL iniciado com a extração do link raw no GitHub.
+
+
+## Resumo do Relatório
+
+O relatório é dividido em três páginas temáticas, com foco em análise financeira e comercial:
+
+Página 1 — Visão Executiva
+Objetivo: Resumo rápido de performance.
+
+KPIs principais: Receita Bruta ($127,9 Mi), Total de Descontos ($9,2 Mi), Receita Líquida ($118,7 Mi), Total de Custos ($101,8 Mi), Lucro ($16,9 Mi) e Margem de Lucro (14,2%).
+Visual 1 — Evolução mensal da Receita Líquida: gráfico de linhas comparando o ano atual com o ano anterior (sazonalidade com pico em outubro).
+Visual 2 — Lucro por País e Segmento: gráfico de barras empilhadas horizontais, mostrando que o segmento Government é o que mais contribui para o lucro em todos os países.
+Visual 3 — Receita Líquida por País e Segmento: gráfico de colunas agrupadas, com destaque para o alto volume de Government e Small Business.
+Página 2 — Análise de Produtos e Preços
+Objetivo: Entender o que dá lucro e o que só dá volume.
+
+Visual 1 — Margem de Lucro % por Preço Médio de Venda: gráfico de dispersão que mostra a relação entre preço e margem, com destaque para produtos de baixo preço e alta margem (ex: Montana) versus alto preço e baixa margem (ex: VTT).
+Visual 2 — Lucro por Produto: gráfico de cascata (waterfall) mostrando a contribuição de cada produto para o lucro total. Carretera é o produto mais lucrativo, enquanto Paseo é o que menos contribui.
+Visual 3 — Receita Líquida por Produto: treemap com a participação de cada produto na receita. Paseo lidera em volume de receita, seguido por Velo e Amarilla.
+Página 3 — Análise de Descontos
+Objetivo: Avaliar se os descontos estão trazendo retorno.
+
+Visual 1 — Lucro e Receita Líquida por Faixa de Desconto: gráfico de colunas agrupadas mostrando que a faixa Medium gera maior receita líquida, mas a faixa Low apresenta melhor relação lucro/receita.
+Visual 2 — % Impacto Desconto por Produto: gráfico de barras horizontais com o percentual de impacto dos descontos sobre a receita bruta. Velo (8,0%) e Carretera (7,5%) são os mais afetados.
+Tabela auxiliar: matriz com a Margem de Lucro % por País, Segmento e Faixa de Desconto, evidenciando que:
+Channel Partners e Midmarket mantêm margens altas mesmo com descontos.
+Enterprise tem margens negativas em quase todas as faixas (exceto "None").
+Government e Small Business têm margens positivas, mas menores que os demais segmentos.
+Principais Insights
+Government é o segmento mais lucrativo e com maior receita em todos os países.
+Enterprise opera com margens negativas na maioria dos cenários com desconto.
+Carretera é o produto mais lucrativo, enquanto Paseo tem o maior volume de receita, mas baixa contribuição para o lucro.
+Descontos da faixa Low e Medium são os que melhor equilibram volume e lucratividade.
+Velo e Carretera são os produtos mais impactados por descontos.
